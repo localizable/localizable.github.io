@@ -4,6 +4,19 @@ body {
   background-color: #FCFCFC;
 }
 
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
 .container {
   height: 100%;
   position: relative;
@@ -21,7 +34,18 @@ body {
   font-size: 3.5vw;
 }
 
-.beta-note {
+.note {
+  font-size: 2.5vw;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.animation-pane {
+  display: inherit;
+}
+
+.typed-cursor {
   font-size: 2.5vw;
 }
 
@@ -95,7 +119,7 @@ body {
   margin-top: 10%;
   background-color: white;
   height: 50px;
-  width: 100px;
+  width: 150px;
   border-style: solid;
   border-color: #DBDBDB;
   display: flex;
@@ -139,4 +163,28 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+/* ======= Typed.js blinking cursor ======= */
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

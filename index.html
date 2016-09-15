@@ -3,22 +3,33 @@
 <head>
   <link rel="stylesheet" type="text/css" href="localizable-styles.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/typed.js/dist/typed.min.js"></script>
+  <script>
+      $(function(){
+          $(".note").typed({
+              strings: ["localizing your app in real-time", "localização de apps em tempo real", "本地化您的应用程序的实时"],
+              typeSpeed: 25,
+              loop: true
+          });
+      });
+  </script>
 </head>
 <body>
   <div class="container">
-    <div class="logo"> Localizable </div>
+    <div class="logo"> <a href="http://localizable.io">Localizable </a></div>
     <div class="menu"> Soon™ </div>
     
     <div class="main-content">
       <div class="main-text">
-        <div class="one-liner">String localization done right. Real-time update. No redeploys.</div>
-        <div class="beta-note">accepting Beta testers now.</div>
+        <div class="one-liner">Localizable</div>
+        <div class="animation-pane">
+          <div class="note"></div>
+        </div>
       </div>
     </div>
-    
     <div class="subscribe">
       <!-- Begin MailChimp Signup Form -->
-		
 		
 		<div id="mc_embed_signup">
 		<form action="//faber-ventures.us3.list-manage.com/subscribe/post?u=7850bdeab33147b10f9e78650&amp;id=6a060130be" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -33,7 +44,7 @@
 				<div class="response" id="mce-success-response" style="display:none"></div>
 			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7850bdeab33147b10f9e78650_6a060130be" tabindex="-1" value=""></div>
-			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			<div class="clear"><input type="submit" value="Signup for Beta" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 			</div>
 		</form>
 		</div>
